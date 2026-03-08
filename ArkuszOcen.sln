@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkuszOcen", "ArkuszOcen\ArkuszOcen.csproj", "{710C319F-F9BA-4E5B-8179-29180DDC451F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkuszOcen.Model", "ArkuszOcen.Model\ArkuszOcen.Model.csproj", "{D7CFB7D5-351C-45E4-AEE6-CA8438BF28A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{710C319F-F9BA-4E5B-8179-29180DDC451F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{710C319F-F9BA-4E5B-8179-29180DDC451F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{710C319F-F9BA-4E5B-8179-29180DDC451F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{710C319F-F9BA-4E5B-8179-29180DDC451F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CFB7D5-351C-45E4-AEE6-CA8438BF28A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7CFB7D5-351C-45E4-AEE6-CA8438BF28A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7CFB7D5-351C-45E4-AEE6-CA8438BF28A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7CFB7D5-351C-45E4-AEE6-CA8438BF28A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E95D185-19F3-49DE-8D32-AACA59114AC7}
+	EndGlobalSection
+EndGlobal

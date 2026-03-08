@@ -1,0 +1,60 @@
+﻿<Window x:Class="ArkuszOcen.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:ArkuszOcen"
+mc:Ignorable="d"
+Height="450" Width="800"
+Title="Arkusz studentów i ich ocen"
+WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Plik">
+                <MenuItem Header="_Eksportuj..." Click="PlikEksportuj_Click"/>
+                <MenuItem Header="_Importuj..." Click="PlikImportuj_Click" />
+                <Separator />
+                <MenuItem Header="_Wyjście" Click="PlikZamknij_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Studenci">
+                <MenuItem Header="_Dodaj nowego" Click="StudenciDodajNowego_Click"/>
+                <MenuItem Header="_Edytuj wybranego" Click="StudenciEdytujWybranego_Click"/>
+                <MenuItem Header="_Usuń wybranego" Click="StudenciUsuńWybranego_Click"/>
+                <MenuItem Header="_Usuń wszystkich" Click="StudenciUsuńWszystkich_Click"/>
+                <Separator />
+                <MenuItem Header="_Wyświetl wszystkich"
+Click="StudenciWyświetlWszystkich_Click"/>
+                <MenuItem Header="W_yświetl wszystkich z ocenami"
+Click="StudenciWyświetlWszystkichZOcenami_Click"/>
+                <MenuItem Header="Wyś_wietl wszystkich z liczbą ocen i średnią"
+Click="StudenciWyświetlWszystkichZLiczbąOcenIŚrednią_Click"/>
+                <MenuItem Header="Wyświetl _liczbę wszystkich"
+Click="StudenciWyświetlLiczbęWszystkich_Click"/>
+                <MenuItem Header="Wyświetl najlepszego i najgorszego"
+Click="StudenciWyświetlNajlepszegoINajgorszego_Click"/>
+                <MenuItem Header="Wyświetl podobnych do studenta wybranego w sensie ocen"
+Click="StudenciWyświetlPodobnychDoStudentaWybranegoWSensieOcen_Click"/>
+                <MenuItem Header="itd." />
+            </MenuItem>
+            <MenuItem Header="_Oceny">
+                <MenuItem Header="_Dodaj dla wybranego studenta"
+Click="OcenyDodajDlaWybranegoStudenta_Click"/>
+                <MenuItem Header="_Edytuj wybraną" Click="OcenyEdytujWybraną_Click"/>
+                <MenuItem Header="_Usuń wybraną" Click="OcenyUsuńWybraną_Click"/>
+                <Separator />
+                <MenuItem Header="_Wyświetl wszystkie" Click="OcenyWyświetlWszystkie_Click"/>
+                <MenuItem Header="W_yświetl wszystkie dla wybranego studenta"
+Click="OcenyWyświetlWszystkieDlaWybranegoStudenta_Click"/>
+                <MenuItem Header="Wyświetl _liczbę wszystkich"
+Click="OcenyWyświetlLiczbęWszystkich_Click"/>
+                <MenuItem Header="Wyświetl ś_rednią z przedmiotów"
+Click="OcenyWyświetlŚredniąZPrzedmiotów_Click"/>
+                <MenuItem Header="itd." />
+            </MenuItem>
+        </Menu>
+        <ScrollViewer Height="400" VerticalScrollBarVisibility="Auto">
+            <DataGrid x:Name="dg" Margin="20"
+AutoGenerateColumns="True" />
+        </ScrollViewer>
+    </StackPanel>
+</Window>

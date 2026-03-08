@@ -1,0 +1,26 @@
+﻿<Window x:Class="ArkuszOcen.StudentWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:ArkuszOcen"
+mc:Ignorable="d"
+Title="Student" SizeToContent="WidthAndHeight" ResizeMode="NoResize"
+Loaded="Window_Loaded">
+    <StackPanel Margin="20" >
+        <UniformGrid Columns="2" VerticalAlignment="Top">
+            <Label Content="_Imię" Margin="5"/>
+            <TextBox x:Name="tbImię" Margin="5" />
+            <Label Content="Nazwisko" Margin="5"/>
+            <TextBox x:Name="tbNazwisko" Margin="5" />
+            <Label Content="Numer indeksu" Margin="5"/>
+            <TextBox x:Name="tbNumerIndeksu" Margin="5" />
+            <Label Content="Wydział" Margin="5"/>
+            <TextBox x:Name="tbWydział" Margin="5" />
+        </UniformGrid>
+        <UniformGrid Columns="2" Margin="0,20,0,0">
+            <Button Content="_Zatwierdź" IsDefault="True" Click="Zatwierdź_Click" Margin="5"/>
+            <Button Content="_Anuluj" Margin="5" Click="Anuluj_Click" IsDefault="True"/>
+        </UniformGrid>
+    </StackPanel>
+</Window>
